@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Configurações gerais */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  color: #333;
+}
+
+/* Banner */
+
+.banner {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba');
+
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 22px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Container do artigo */
+
+.container {
+  width: 700px;
+  margin: 50px auto;
+}
+
+/* Títulos */
+
+.container h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: #444;
+}
+
+/* Parágrafos */
+
+.container p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Links */
+
+.container a {
+  color: #555;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: none;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #b7e4c7
+  );
+}
+
+/* Efeito hover */
+
+.container a:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #52b788
+  );
+}
+
+/* Responsividade */
+
+/* Telas até 1200px */
+
+@media (max-width: 1200px) {
+ .container {
+  width: 700px;
+  max-width: 90%;
+  margin: 50px auto;
+}
+}
+
+/* Telas até 992px */
+
+@media (max-width: 992px) {
+  .container {
+    width: 650px;
+  }
+}
+
+/* Telas até 768px */
+
+@media (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+
+  .banner h1 {
+    font-size: 34px;
+  }
+}
+
+/* Telas até 576px */
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  .banner {
+    padding: 80px 20px;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+}
